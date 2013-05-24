@@ -13,19 +13,36 @@ There are currently two types of LaTeX that can be rendered:
   Delimiters: `\(` and `\)`<br/>
   Example: `\( \sqrt{123} \)`<br/><br/>
 
+## Installation
+
+1. Get the zip file mathjax.zip ([DOWNLOAD](http://dl.bintray.com/raywainman/generic/mathjax.zip?direct))
+2. Upload this file to the Moodle plugin install interface and follow the instructions
+  `http://moodle_root/admin/tool/installaddon/index.php`
+3. Go to the Filter settings within Moodle (Administrative Settings->Plugins->Filters->Manage Filters)
+4. Ensure the MathJax filter is enabled
+
+** NOTE: Moodle may not accept this zip file due to its size, alternatively:
+1. Extract the zip file above into `moodle_root/filter`
+2. Visit the administration notification page `http://moodle_root/admin/index.php`
+3. Go to the Filter settings within Moodle (Administrative Settings->Plugins->Filters->Manage Filters)
+4. Ensure the MathJax filter is enabled
+
 #### Works great with the [Moodle TinyMCE MathEditor](https://github.com/oohoo/moodle-tinymce_matheditor)
+
+# Development
+
 ===
 
-### Installation
+### Instructions
 
-1. Clone this repository `git clone https://github.com/oohoo/moodle-filter_mathjax.git mathjax`
+1. Clone this repository `git clone https://github.com/oohoo/moodle-filter_mathjax.git mathjax` into the 
+  `moodle_root/filter` directory
 2. `cd` into the root directory of the repository
 3. Initialise the submodule `git submodule init`
 4. Update the submodule `git submodule update`
-5. Run the deployment script
-  `make deploy`
-6. This will create a zip file called `matheditor.zip` within the current directory
-7. Upload this file to the Moodle plugin install interface and follow the instructions
-  `http://moodle_root/admin/tool/installaddon/index.php`
-8. Go to the Filter settings within Moodle (Administrative Settings->Plugins->Filters->Manage Filters)
-9. Ensure the MathJax filter is enabled
+5. Visit the administration notification page `http://moodle_root/admin/index.php`
+6. Go to the Filter settings within Moodle (Administrative Settings->Plugins->Filters->Manage Filters)
+7. Ensure the MathJax filter is enabled
+8. **To Deploy:** run `make deploy`
+9. This will create a file called `mathjax.zip` within the current directory ready for distribution
+

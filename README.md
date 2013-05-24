@@ -31,8 +31,6 @@ There are currently two types of LaTeX that can be rendered:
 
 # Development
 
-===
-
 ### Instructions
 
 1. Clone this repository `git clone https://github.com/oohoo/moodle-filter_mathjax.git mathjax` into the 

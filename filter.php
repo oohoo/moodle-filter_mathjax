@@ -40,7 +40,8 @@ class filter_mathjax extends moodle_text_filter {
         $page->requires->js(new moodle_url('/filter/mathjax/vendor/mathjax/MathJax.js', array(
             'config' => 'TeX-AMS-MML_HTMLorMML',
             'delayStartupUntil' => 'onload',
-            'showProcessingMessages' => false
+            'showProcessingMessages' => 'false',
+            'messageStyle' => 'none'
         )));
     }
 }

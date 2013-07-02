@@ -36,11 +36,16 @@ There are currently two types of LaTeX that can be rendered:
 1. Clone this repository `git clone https://github.com/oohoo/moodle-filter_mathjax.git mathjax` into the 
   `moodle_root/filter` directory
 2. `cd` into the root directory of the repository
-3. Initialise the submodule `git submodule init`
-4. Update the submodule `git submodule update`
-5. Visit the administration notification page `http://moodle_root/admin/index.php`
-6. Go to the Filter settings within Moodle (Administrative Settings->Plugins->Filters->Manage Filters)
-7. Ensure the MathJax filter is enabled
-8. **To Deploy:** run `make deploy`
-9. This will create a file called `mathjax.zip` within the current directory ready for distribution
+3. Initialise the submodule `make submodule`
+4. Visit the administration notification page `http://moodle_root/admin/index.php`
+5. Go to the Filter settings within Moodle (Administrative Settings->Plugins->Filters->Manage Filters)
+6. Ensure the MathJax filter is enabled
+7. **To Deploy:** run `make deploy`
+8. This will create a file called `mathjax.zip` within the current directory ready for distribution
 
+### Update Submodule
+
+1. Ensure you have done instructions 1-3 above
+2. Update the submodule `make update` this will fetch the latest version of MathJax
+3. **To Deploy:** run `make deploy`
+4. This will create a file called `mathjax.zip` within the current directory ready for distribution

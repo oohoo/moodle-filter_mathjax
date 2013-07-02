@@ -43,7 +43,7 @@ There are currently two types of LaTeX that can be rendered:
 7. **To Deploy:** run `make deploy`
 8. This will create a file called `mathjax.zip` within the current directory ready for distribution
 
-### Update Submodule
+### Update MathJax
 
 1. Ensure you have done instructions 1-3 above
 2. Update the submodule `make update` this will fetch the latest version of MathJax

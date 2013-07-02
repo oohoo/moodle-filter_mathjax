@@ -7,8 +7,7 @@ submodule:
 
 # Updates the submodule
 update:
-	cd vendor/mathjax
-	git pull origin master
+	cd vendor/mathjax; git pull origin master
 
 # Deploys the filter as a zip file
 deploy:
